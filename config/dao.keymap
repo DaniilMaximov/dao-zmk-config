@@ -30,17 +30,18 @@
         compatible = "zmk,combos";
 
         language_combo {
-            bindings = <&language>;
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <12 37>;
+        };
+
+        altTab {
+            bindings = <&kp LA(TAB)>;
             key-positions = <12 36>;
         };
-    };
 
-    macros {
-        language: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT)>;
-            label = "NEW_MACRO";
+        ctrlshiftesc {
+            bindings = <&kp LS(LC(ESCAPE))>;
+            key-positions = <0 12 24>;
         };
     };
 
@@ -49,10 +50,10 @@
 
         default_layer {
             bindings = <
-&mt LGUI ESC        &kp Q  &kp W  &kp E             &kp R      &kp T          &kp Y           &kp U          &kp I           &kp O    &kp P     &kp LBKT
-&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D             &kp F      &kp G          &kp H           &kp J          &kp K           &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL           &kp Z  &kp X  &kp C             &kp V      &kp B          &kp N           &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp INSERT
-                                  &lt RSE LEFT_ALT  &kp SPACE  &lt LWR ENTER  &lt LWR ESCAPE  &kp BACKSPACE  &lt RSE DELETE
+&mt LGUI ESC             &kp Q  &kp W  &kp E        &kp R      &kp T          &kp Y           &kp U          &kp I           &kp O    &kp P     &kp LBKT
+&mt LEFT_SHIFT LEFT_ALT  &kp A  &kp S  &kp D        &kp F      &kp G          &kp H           &kp J          &kp K           &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
+&kp LCTRL                &kp Z  &kp X  &kp C        &kp V      &kp B          &kp N           &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp INSERT
+                                       &lt RSE TAB  &kp SPACE  &lt LWR ENTER  &lt LWR ESCAPE  &kp BACKSPACE  &lt RSE DELETE
             >;
         };
 
