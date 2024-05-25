@@ -26,15 +26,33 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        language_combo {
+            bindings = <&language>;
+            key-positions = <12 36>;
+        };
+    };
+
+    macros {
+        language: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_ALT)>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&mt LGUI ESC        &kp Q  &kp W  &kp E             &kp R            &kp T             &kp Y           &kp U            &kp I              &kp O    &kp P     &kp LBKT
-&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D             &kp F            &kp G             &kp H           &kp J            &kp K              &kp L    &kp SEMI  &mt RIGHT_SHIFT RIGHT_SHIFT
-&mt LCTRL LCTRL     &kp Z  &kp X  &kp C             &kp V            &kp B             &kp N           &kp M            &kp COMMA          &kp DOT  &kp FSLH  &mt INSERT INS
-                                  &lt RSE LEFT_ALT  &mt ENTER ENTER  &lt LWR LEFT_GUI  &lt LWR DELETE  &mt SPACE SPACE  &lt RSE BACKSPACE
+&mt LGUI ESC        &kp Q  &kp W  &kp E             &kp R      &kp T          &kp Y           &kp U          &kp I           &kp O    &kp P     &kp LBKT
+&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D             &kp F      &kp G          &kp H           &kp J          &kp K           &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
+&kp LCTRL           &kp Z  &kp X  &kp C             &kp V      &kp B          &kp N           &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp INSERT
+                                  &lt RSE LEFT_ALT  &kp SPACE  &lt LWR ENTER  &lt LWR ESCAPE  &kp BACKSPACE  &lt RSE DELETE
             >;
         };
 
