@@ -50,9 +50,9 @@
 
         default_layer {
             bindings = <
-&mt LGUI ESC             &kp Q  &kp W  &kp E        &kp R      &kp T          &kp Y           &kp U          &kp I           &kp O    &kp P     &kp LBKT
+&mt LGUI LS(LEFT_ALT)    &kp Q  &kp W  &kp E        &kp R      &kp T          &kp Y           &kp U          &kp I           &kp O    &kp P     &kp LBKT
 &mt LEFT_SHIFT LEFT_ALT  &kp A  &kp S  &kp D        &kp F      &kp G          &kp H           &kp J          &kp K           &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
-&kp LCTRL                &kp Z  &kp X  &kp C        &kp V      &kp B          &kp N           &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp INSERT
+&mt LCTRL LEFT_GUI       &kp Z  &kp X  &kp C        &kp V      &kp B          &kp N           &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp INSERT
                                        &lt RSE TAB  &kp SPACE  &lt LWR ENTER  &lt LWR ESCAPE  &kp BACKSPACE  &lt RSE DELETE
             >;
         };
@@ -68,10 +68,10 @@
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &lt ADJ RET   &lt ADJ ESC   &trans    &trans
+&mt LGUI KP_NUM  &none            &none       &none         &none            &none        &none        &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
+&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &none        &none        &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+&none            &none            &none       &none         &none            &none        &none        &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
+                                              &trans        &trans           &lt ADJ RET  &lt ADJ ESC  &trans    &trans
             >;
         };
 
