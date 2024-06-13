@@ -45,16 +45,6 @@
         };
     };
 
-    macros {
-        language: language {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&macro_wait_time 1>, <&kp LEFT_SHIFT>;
-
-            label = "LANGUAGE";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -71,7 +61,7 @@
             bindings = <
 &trans  &kp N1          &kp N2     &kp N3                &kp N4                 &kp N5         &kp N6     &kp N7          &kp N8            &kp N9          &kp N0     &kp RIGHT_BRACKET
 &trans  &kp APOSTROPHE  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &kp MINUS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp UNDERSCORE  &kp EQUAL  &trans
-&trans  &none           &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp SLASH  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE        &none      &trans
+&tog 4  &none           &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp SLASH  &kp LESS_THAN   &kp GREATER_THAN  &kp PIPE        &none      &trans
                                    &lt 3 TAB             &trans                 &trans         &trans     &trans          &lt 3 DEL
             >;
         };
@@ -91,6 +81,15 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &trans        &none         &trans
+            >;
+        };
+
+        Russian {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&tog 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
