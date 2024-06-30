@@ -49,7 +49,9 @@
         language_switcher: language_switcher {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+            bindings = <&macro_press   &kp LALT>
+                     , <&macro_tap     &kp LEFT_SHIFT>
+                     , <&macro_release &kp LALT>;
             label = "LANGUAGE_SWITCHER";
         };
 
