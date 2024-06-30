@@ -49,16 +49,28 @@
         language_switcher: language_switcher {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press   &kp LALT>
-                     , <&macro_tap     &kp LEFT_SHIFT>
-                     , <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "LANGUAGE_SWITCHER";
         };
 
         dot: dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N4 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "DOT";
         };
     };
