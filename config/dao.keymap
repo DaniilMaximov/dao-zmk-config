@@ -23,7 +23,38 @@
     };
 };
 
-ZMK_UNICODE_SINGLE(euro_sign, KP_N0, KP_N0, KP_N4, KP_N6)
+//B 2nd row
+//left
+ZMK_UNICODE_SINGLE(lb_1_tilde, KP_N0, KP_N1, KP_N2, KP_N6)
+ZMK_UNICODE_SINGLE(lb_2_plus, KP_N0, KP_N0, KP_N4, KP_N3)
+ZMK_UNICODE_SINGLE(lb_3_minus, KP_N0, KP_N0, KP_N4, KP_N5)
+ZMK_UNICODE_SINGLE(lb_4_left_parenthesis, KP_N0, KP_N0, KP_N4, KP_N0)
+ZMK_UNICODE_SINGLE( lb_5_right_parenthesis,   KP_N0, KP_N0, KP_N4, KP_N1)
+
+//right
+ZMK_UNICODE_SINGLE(rb_1_left_brace, KP_N0, KP_N1, KP_N2, KP_N3)
+ZMK_UNICODE_SINGLE(rb_2_right_brace, KP_N0, KP_N1, KP_N2, KP_N4)
+ZMK_UNICODE_SINGLE(rb_3_underscore, KP_N0, KP_N0, KP_N9, KP_N5)
+ZMK_UNICODE_SINGLE(rb_4_equal, KP_N0, KP_N0, KP_N6, KP_N1)
+ZMK_UNICODE_PAIR(rb_5_colon_semi_colon, KP_N0, KP_N0, KP_N5, KP_N9,  KP_N0, KP_N0, KP_N5, KP_N8)
+ZMK_UNICODE_PAIR(rb_6_quote_double_quote, KP_N0, KP_N1, KP_N4, KP_N6,  KP_N0, KP_N1, KP_N4, KP_N8)
+
+//C 3rd row
+//left
+//1 is common backslash
+ZMK_UNICODE_SINGLE(lc_2_pipe, KP_N0, KP_N1, KP_N2, KP_N4)
+ZMK_UNICODE_SINGLE(lc_3_apostrophe, KP_N0, KP_N0, KP_N9, KP_N6)
+ZMK_UNICODE_SINGLE(lc_4_left_bracket, KP_N0, KP_N0, KP_N9, KP_N1)
+ZMK_UNICODE_SINGLE(lc_5_right_bracket, KP_N0, KP_N0, KP_N9, KP_N2)
+
+//right
+ZMK_UNICODE_SINGLE(rc_1_less_than, KP_N0, KP_N0, KP_N6, KP_N0)
+ZMK_UNICODE_SINGLE(rc_2_greater_than, KP_N0, KP_N0, KP_N6, KP_N2)
+ZMK_UNICODE_SINGLE(rc_3_comma, KP_N0, KP_N0, KP_N4, KP_N4)
+ZMK_UNICODE_SINGLE(rc_4_dot, KP_N0, KP_N0, KP_N4, KP_N6)
+ZMK_UNICODE_PAIR( rc_5_slash_question, KP_N0, KP_N0, KP_N4, KP_N7, KP_N0, KP_N0, KP_N6, KP_N3)
+
+
 
 / {
     combos {
