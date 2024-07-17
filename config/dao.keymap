@@ -33,7 +33,7 @@ ZMK_UNICODE_SINGLE( lb_5_right_parenthesis,   KP_N0, KP_N0, KP_N4, KP_N1)
 
 //right
 ZMK_UNICODE_SINGLE(rb_1_left_brace, KP_N0, KP_N1, KP_N2, KP_N3)
-ZMK_UNICODE_SINGLE(rb_2_right_brace, KP_N0, KP_N1, KP_N2, KP_N4)
+ZMK_UNICODE_SINGLE(rb_2_right_brace, KP_N0, KP_N1, KP_N2, KP_N5)
 ZMK_UNICODE_SINGLE(rb_3_underscore, KP_N0, KP_N0, KP_N9, KP_N5)
 ZMK_UNICODE_SINGLE(rb_4_equal, KP_N0, KP_N0, KP_N6, KP_N1)
 ZMK_UNICODE_PAIR(rb_5_colon_semi_colon, KP_N0, KP_N0, KP_N5, KP_N9,  KP_N0, KP_N0, KP_N5, KP_N8)
@@ -122,10 +122,10 @@ ZMK_UNICODE_PAIR( rc_5_slash_question, KP_N0, KP_N0, KP_N4, KP_N7, KP_N0, KP_N0,
 
         lower_layer {
             bindings = <
-&trans  &kp N1          &kp N2        &kp N3                &kp N4                  &kp N5                         &kp N6             &kp N7              &kp N8                &kp N9           &kp N0                             &kp RIGHT_BRACKET
-&trans  &lb_1_tilde     &lb_2_plus    &lb_3_minus           &lb_4_left_parenthesis  &lb_5_right_parenthesis        &rb_1_left_brace   &rb_2_right_brace   &rb_3_underscore      &rb_4_equal      &rb_5_colon_semi_colon             &trans
-&none   &none           &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp BACKSLASH                  &kp SLASH          &kp LESS_THAN       &kp GREATER_THAN      &kp PIPE         &rc_5_slash_question               &trans
-                                      &lt 3 TAB             &trans                  &trans                         &trans             &trans              &lt 3 DEL
+&trans  &kp N1                  &kp N2             &kp N3                &kp N4                   &kp N5                             &kp N6                 &kp N7                  &kp N8                &kp N9           &kp N0                             &kp RIGHT_BRACKET
+&trans  &lb_1_tilde             &lb_2_plus         &lb_3_minus           &lb_4_left_parenthesis   &lb_5_right_parenthesis            &rb_1_left_brace       &rb_2_right_brace       &rb_3_underscore      &rb_4_equal      &rb_5_colon_semi_colon             &trans
+&none   &kp BACKSLASH           &lc_2_pipe         &lc_3_apostrophe      &lc_4_left_bracket       &lc_5_right_bracket                &rc_1_less_than        &rc_2_greater_than      &rc_3_comma           &rc_4_dot        &rc_5_slash_question               &trans
+                                                   &lt 3 TAB             &trans                   &trans                             &trans                 &trans                  &lt 3 DEL
             >;
         };
 
