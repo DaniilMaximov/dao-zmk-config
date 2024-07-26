@@ -27,13 +27,14 @@
 
 / {
     behaviors {
-        to_4: to_4 {
+        mt_macro: mt_macro {
             compatible = "zmk,behavior-macro";
-            label = "TO_4";
+            label = "MT_MACRO";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>, <&kp LS>,
                 <&macro_tap>, <&to 4>,
-                <&macro_release>, <&set_primary_layer 4>;
+                <&macro_release>, <&kp LS>;
         };
     };
 };
@@ -95,7 +96,7 @@
         default_layer {
             bindings = <
 &mt LEFT_ALT ESCAPE            &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Y         &kp U          &kp I         &kp O    &kp P     &kp LBKT
-&mt LEFT_SHIFT TO_4            &kp A  &kp S  &kp D      &kp F      &kp G        &kp H         &kp J          &kp K         &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
+&mt_macro           &kp A  &kp S  &kp D      &kp F      &kp G        &kp H         &kp J          &kp K         &kp L    &kp SEMI  &mt RIGHT_SHIFT SQT
 &mt LCTRL LEFT_GUI             &kp Z  &kp X  &kp C      &kp V      &kp B        &kp N         &kp M          &kp COMMA     &kp DOT  &kp FSLH  &kp INSERT
                                              &lt 2 TAB  &kp SPACE  &lt 1 ENTER  &lt 1 ESCAPE  &kp BACKSPACE  &lt 2 DELETE
             >;
